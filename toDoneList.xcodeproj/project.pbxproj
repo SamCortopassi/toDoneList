@@ -14,6 +14,7 @@
 		662ABE7F2227199200ED49C2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 662ABE7D2227199200ED49C2 /* LaunchScreen.storyboard */; };
 		662ABE8A2227199200ED49C2 /* toDoneListTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 662ABE892227199200ED49C2 /* toDoneListTests.swift */; };
 		662ABE952227199200ED49C2 /* toDoneListUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 662ABE942227199200ED49C2 /* toDoneListUITests.swift */; };
+		662ABEA32227228300ED49C2 /* TodoList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 662ABEA22227228300ED49C2 /* TodoList.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		662ABE902227199200ED49C2 /* toDoneListUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = toDoneListUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		662ABE942227199200ED49C2 /* toDoneListUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = toDoneListUITests.swift; sourceTree = "<group>"; };
 		662ABE962227199200ED49C2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		662ABEA22227228300ED49C2 /* TodoList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoList.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +101,7 @@
 			children = (
 				662ABE742227199000ED49C2 /* AppDelegate.swift */,
 				662ABE762227199000ED49C2 /* ViewController.swift */,
+				662ABEA22227228300ED49C2 /* TodoList.swift */,
 				662ABE782227199000ED49C2 /* Main.storyboard */,
 				662ABE7B2227199200ED49C2 /* Assets.xcassets */,
 				662ABE7D2227199200ED49C2 /* LaunchScreen.storyboard */,
@@ -256,6 +259,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				662ABEA32227228300ED49C2 /* TodoList.swift in Sources */,
 				662ABE772227199000ED49C2 /* ViewController.swift in Sources */,
 				662ABE752227199000ED49C2 /* AppDelegate.swift in Sources */,
 			);
@@ -433,7 +437,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 28X59G44J5;
 				INFOPLIST_FILE = toDoneList/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -450,7 +456,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 28X59G44J5;
 				INFOPLIST_FILE = toDoneList/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
