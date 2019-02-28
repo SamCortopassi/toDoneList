@@ -9,12 +9,27 @@
 import UIKit
 
 class TodoList: NSObject {
+    private let fileURL: URL = {
+        let documentDirectoryURLs = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask)
+        let documentDirectoryURL = documentDirectoryURLs.first!
+        return documentDirectoryURL.appendingPathComponent("todolist.items")
+    }()
+    
     fileprivate var items: [String] = []
+
+func saveItems() {
+    let itemsArray = items as NSArray
+    
+    print("saving to \(fileURL)")
+    if !itemsArray.write(to: fileURL, atomically: true) {
+        print("couldn't do it")
+    }
+}
     
     func add(_ item: String) {
         items.append(item)
+        saveItems()
     }
-
 }
 
 extension TodoList: UITableViewDataSource {
@@ -30,4 +45,6 @@ extension TodoList: UITableViewDataSource {
         return cell
     }
 }
+
+
 
